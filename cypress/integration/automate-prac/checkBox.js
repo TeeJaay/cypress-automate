@@ -11,7 +11,8 @@ describe('checkbox', function () {
     cy.visit('AutomationPractice/')
 
     CHECKCLASSSECTION.readTitle('Checkbox Example')
-    CHECKCLASSSECTION.boxCheck1('Option1')
-    CHECKCLASSSECTION.selectCountry()
+    CHECKCLASSSECTION.boxCheck1()
+    CHECKCLASSSECTION.boxCheck2()
+    CHECKCLASSSECTION.boxCheck3()
   })
 })
