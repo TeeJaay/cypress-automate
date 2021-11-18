@@ -5,23 +5,15 @@ export class checkClassSection {
   }
 
   get check1() {
-    return cy.xpath('//*[@id="checkbox-example"]/fieldset/label[2]')
-  }
-
-  get check1() {
-    return cy.xpath('//*[@id="checkbox-example"]/fieldset/label[1]')
+    return cy.xpath('//*[@id="checkBoxOption1"]')
   }
 
   get check2() {
-    return cy.xpath('//*[@id="checkbox-example"]/fieldset/label[2]')
+    return cy.xpath('//*[@id="checkBoxOption2"]')
   }
 
   get check3() {
-    return cy.xpath('//*[@id="checkbox-example"]/fieldset/label[3]')
-  }
-
-  get county() {
-    return cy.xpath('//*[@id="ui-id-2"]')
+    return cy.xpath('//*[@id="checkBoxOption3"]')
   }
 
   //Test Scripts
@@ -30,10 +22,14 @@ export class checkClassSection {
   }
 
   boxCheck1(check1) {
-    this.check1.should('be.visible').contains('have.text', check1)
+    this.check1.should('be.visible').check()
   }
 
-  selectCountry(county) {
-    this.county.click()
+  boxCheck2(check2) {
+    this.check2.should('be.visible').check()
+  }
+
+  boxCheck3(check3) {
+    this.check3.should('be.visible').check()
   }
 }
