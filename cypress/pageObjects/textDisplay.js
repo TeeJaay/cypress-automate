@@ -12,10 +12,6 @@ export class displayClassSection {
     return cy.xpath('//*[@id="hide-textbox"]')
   }
 
-  get hide() {
-    return cy.xpath('//*[@id="hide-textbox"]')
-  }
-
   get type() {
     return cy.xpath('//*[@id="displayed-text"]')
   }
